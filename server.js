@@ -15,5 +15,11 @@ app.use(bodyParser.json());
 var routes = require('./app/routes/routes')
 routes(app)
 
+ app.get('/', (req, res) => {
+  res.send('Hello World')
+})
+
 app.listen(PORT, () => console.log(`Backend is running on port :${PORT}`))
   
+
+module.exports = app

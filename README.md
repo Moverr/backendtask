@@ -15,4 +15,40 @@ This backend task is mearnt to achieve the following tasks
 * npm run devStart to start the nodedemon development server 
 * npm run coverage to run tests and their coverage
 
-## Dependencies 
+ 
+ # Example Payloadds
+  * Login 
+ url = localhost:port/login
+ method = POST
+ {
+	"username":"username",
+	"password":"password"
+ }
+
+
+ * Uploading Image
+ url = localhost:port/upload
+ method = POST
+ filename  = avatar
+ filevalue = choose an image from your machine 
+
+ * Sending a patch request 
+ url : localhost:port/ 
+ method = patch
+
+ body
+ {
+	"original":{
+			 "baz": "ddateat",
+			 "foo": "bar"
+	},
+	"patch":
+		[
+			{ "op": "replace", "path": "/baz", "value": "Belowved Nation" },
+			  { "op": "add", "path": "/hello", "value": ["world"] },
+			  { "op": "remove", "path": "/foo" }
+			  
+		]
+	
+
+}

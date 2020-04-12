@@ -18,24 +18,31 @@ This backend task is mearnt to achieve the following tasks
  
  # Example Payloadds
   * Login 
+  ```
  url = localhost:port/login
  method = POST
  {
 	"username":"username",
 	"password":"password"
  }
+ ```
 
 
  * Uploading Image
+ ```
  url = localhost:port/upload
  method = POST
  filename  = avatar
  filevalue = choose an image from your machine 
+ ```
 
  * Sending a patch request 
+ ```
  url : localhost:port/ 
  method = patch
+ ```
 
+```
  body
  {
 	"original":{
@@ -52,3 +59,4 @@ This backend task is mearnt to achieve the following tasks
 	
 
 }
+```

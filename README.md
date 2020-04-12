@@ -13,3 +13,6 @@ This backend task is mearnt to achieve the following tasks
 * npm start to start the server 
 * npm test to test the application
 * npm run devStart to start the nodedemon development server 
+* npm run coverage to run tests and their coverage
+
+## Dependencies 
